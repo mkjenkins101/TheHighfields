@@ -3,8 +3,16 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body{
+    margin: 0;
+    padding: 0;
     background:#4C9BCD url(images/img01.jpg) repeat-x left top;
     background-size: 100%;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
 }
 
 h1{
