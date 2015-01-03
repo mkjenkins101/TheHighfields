@@ -1,5 +1,8 @@
+<!DOCTYPE html>
+<html>
+<body>
 <h1>Home</h1>
-<div id="highfield-carousel" class="carousel slide" style="width: 35%; margin: 0 auto" data-ride="carousel">
+<div id="highfield-carousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#highfield-carousel" data-slide-to="0" class="active"></li>
@@ -8,21 +11,15 @@
   </ol>
 
   <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
+  <div id="carousel-inner" class="carousel-inner" role="listbox">
     <div class="item active">
-    <div class="center">
-      <%= image_tag("NK.jpg", size: "400x300") %>
-    </div>
+      <%= image_tag("NK.jpg") %>
     </div>
     <div class="item">
-    <div class="center">
-      <%= image_tag("NK2.jpg", size: "400x300") %>
-    </div>
+      <%= image_tag("NK2.jpg") %>
     </div>
     <div class="item">
-    <div class="center">
-      <%= image_tag("NK4.jpg", size: "400x300" ) %>
-    </div>
+      <%= image_tag("NK4.jpg") %>
     </div>
   </div>
 
@@ -30,3 +27,5 @@
   <a class="left carousel-control" href="#highfield-carousel" role="button" data-slide="prev"></a>
   <a class="right carousel-control" href="#highfield-carousel" role="button" data-slide="next"></a>
 </div>
+</body>
+</html>
