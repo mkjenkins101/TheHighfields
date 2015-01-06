@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<h1>THE HIGHFIELDS</h1>
+<div class="nav">
+	<%= active_link_to "HOME", root_path, :active => :exclusive %>
+	<%= active_link_to "ABOUT", about_path, :active => :exclusive%>
+	<%= active_link_to "MUSIC", music_path, :active => :exclusive%>
+	<%= active_link_to "VIDEO", video_path, :active => :exclusive%>
+	<%= active_link_to "CONTACT", contact_path, :active => :exclusive%>
+</div>
+<div class="ext-links">
+    <div class="square-logo">
+    <br>
+    <%= link_to image_tag("fb_logo.png", size: "40x40"), "https://www.facebook.com/pages/The-Highfields/614581685257125" %>
+    </div>
+    <div class="square-logo">
+    <br>
+    <%= link_to image_tag("twitter_logo.png", size: "40x40"), "#" %>
+    </div>
+    <div class="square-logo">
+    <br>
+    <%= link_to image_tag("instagram_logo.png", size: "40x40"), "#" %>
+    </div>
+    <div class="square-logo">
+    <br>
+    <%= link_to image_tag("blogger_logo.png", size: "40x40"), "#" %>
+    </div>
+    <div class="ctmm-logo">
+    <%= link_to image_tag("catch_the_moon_music_logo.png", size: "60x60"), "http://catchthemoonmusic.com/artists/the-highfields/" %>
+    </div>
+</div>
+</html>

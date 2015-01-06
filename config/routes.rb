@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root "pages#home"
-  get "news" => "pages#news"
+  get "about" => "pages#about"
   get "music" => "pages#music"
   get "video" => "pages#video"
   get "contact" => "pages#contact"

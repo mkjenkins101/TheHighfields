@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1>Home</h1>
-<div id="highfield-carousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#highfield-carousel" data-slide-to="0" class="active"></li>
-    <li data-target="#highfield-carousel" data-slide-to="1"></li>
-    <li data-target="#highfield-carousel" data-slide-to="2"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div id="carousel-inner" class="carousel-inner" role="listbox">
-    <div class="item active">
-      <%= image_tag("NK.jpg") %>
+    <div class="home">
+    <div class="home1">
+      <div class="overlay-text">
+        NEW SINGLE ON
+        <br>
+        ITUNES
+        <br>
+        "DAYS LIKE THIS"
+        <br>
+        <%= active_link_to "click here", '#' %>
+      </div>
+      <%= image_tag("NK.jpg", size:"230x280", :class => "image-NK") %>
+      <%= image_tag("NK2.jpg", size:"330x280", :class => "image-NK2") %>
+      <div class="home2">
+      <%= image_tag("NK4.jpg", size:"330x280", :class => "image-NK4") %>
+      <div class="overlay-music">
+	<iframe width="200" 
+		height="270" 
+		scrolling="no" 
+		frameborder="no" 
+		src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/109432178&amp;
+		auto_play=false&amp;
+		hide_related=false&amp;
+		show_comments=true&amp;
+		show_user=true&amp;
+		show_reposts=false&amp;
+		visual=true">
+		text
+	</iframe>
+      </div>
+      <%= image_tag("NK.jpg", size:"230x280", :class => "image-NK") %>
     </div>
-    <div class="item">
-      <%= image_tag("NK2.jpg") %>
     </div>
-    <div class="item">
-      <%= image_tag("NK4.jpg") %>
-    </div>
-  </div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#highfield-carousel" role="button" data-slide="prev"></a>
-  <a class="right carousel-control" href="#highfield-carousel" role="button" data-slide="next"></a>
-</div>
 </body>
 </html>
