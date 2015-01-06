@@ -2,23 +2,15 @@
 <html>
 <body>
     <div class="home">
-    <div class="home1">
-      <div class="overlay-text">
-        NEW SINGLE ON
-        <br>
-        ITUNES
-        <br>
-        "DAYS LIKE THIS"
-        <br>
-        <%= active_link_to "click here", '#' %>
+      <div class="home1">
+        <%= link_to image_tag("NEWSINGLE.png", size:"230x280"), "#" %>
+        <%= image_tag("HIGHFIELDS1.png", size:"330x280") %>
       </div>
-      <%= image_tag("NK.jpg", size:"230x280", :class => "image-NK") %>
-      <%= image_tag("NK2.jpg", size:"330x280", :class => "image-NK2") %>
       <div class="home2">
-      <%= image_tag("NK4.jpg", size:"330x280", :class => "image-NK4") %>
-      <div class="overlay-music">
-	<iframe width="200" 
-		height="270" 
+        <%= image_tag("HIGHFIELDS2.png", size:"330x280") %>
+        <div class="music-player">
+	<iframe width="230" 
+		height="280" 
 		scrolling="no" 
 		frameborder="no" 
 		src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/109432178&amp;
@@ -28,10 +20,9 @@
 		show_user=true&amp;
 		show_reposts=false&amp;
 		visual=true">
-		text
 	</iframe>
-      </div>
-      <%= image_tag("NK.jpg", size:"230x280", :class => "image-NK") %>
+        </div>
+        <%= image_tag("", size:"230x280") %>
     </div>
     </div>
 </body>
